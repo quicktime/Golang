@@ -21,6 +21,7 @@ func main() {
 	
 	lineCount := 0
 	for fileScanner.Scan() {
+		fmt.Println(len(fileScanner.Text()))
 		lineCount++
 	}
 	fmt.Println("Number of lines in the file: ", lineCount)
